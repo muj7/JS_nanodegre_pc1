@@ -113,7 +113,7 @@ fetch("./dino.json")
 
 // Create Dino Compare Method 1
 // NOTE: Weight in JSON file is in lbs, height in inches.
-Dino.prototpe.CmpareHeight = function (height) {
+Dino.prototype.CmpareHeight = function (height) {
   if (ourHuman.height > height) {
     return "you are taller than this dino";
   } else {
@@ -122,7 +122,7 @@ Dino.prototpe.CmpareHeight = function (height) {
 };
 // Create Dino Compare Method 2
 // NOTE: Weight in JSON file is in lbs, height in inches.
-Dino.prototpe.CmpareWeight = function (weight) {
+Dino.prototype.CmpareWeight = function (weight) {
   if (ourHuman.weight > weight) {
     return "you are heavier than this dino";
   } else {
@@ -132,7 +132,7 @@ Dino.prototpe.CmpareWeight = function (weight) {
 
 // Create Dino Compare Method 3
 // NOTE: Weight in JSON file is in lbs, height in inches.
-Dino.prototpe.CmpareDiet = function (diet) {
+Dino.prototype.CmpareDiet = function (diet) {
   if (ourHuman.deit == diet) {
     return "you both have same dite!";
   } else {
@@ -190,7 +190,7 @@ function RemoveForm() {
   form.style.display = "none";
 }
 
-const button = getElementById("btn");
+const button = document.getElementById("btn");
 // On button click, prepare and display infographic
 button.addEventListener("onclick", () => {
   const human = getHumanData();
